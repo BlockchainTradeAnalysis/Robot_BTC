@@ -25,8 +25,7 @@ Github操作影片:https://youtu.be/xAkl5X1v-Lc
 6. 資料來源: https://www.cw.com.tw/article/article.action?id=5090842
 
 二、加密貨幣：通常以BTC和ETH兩大加密貨幣為主。並且以USDT為計價單位，USDT與美金交易，接近1:1。高風險、高波動、24小時、歷史資訊短(2009年開始)：
-1. 基本面：加密貨幣技術特質(乙太幣、萊特幣等)、區塊鏈技術、交易頻率、交易規模、掛
-牌的交易所、挖礦速度等。
+1. 基本面：加密貨幣技術特質(乙太幣、萊特幣等)、區塊鏈技術、交易頻率、交易規模、掛牌的交易所、挖礦速度等。
 2. 技術面：交易系統（含進出場邏輯、停利停損、加碼減倉、價量、型態、支撐壓力位等）。 
 3. 籌碼面：大戶持股比率、虛擬貨幣期貨OI、造市商籌碼。
 4. 消息面：ICO加密貨幣發行、加密貨幣交易所成立、法律制定、避險(新興市場爆發貨幣危機)、交易所本身資訊安全度。第一手訊息Twitter、Telegram、Wechat。第二手訊息Google Trend、Google News。
@@ -39,8 +38,7 @@ Github操作影片:https://youtu.be/xAkl5X1v-Lc
 5. 系統性策略思考（含消息面、技術面），建構介入市場與否SOP。
 
 四、取得即時資料的方式：大致上有兩種：https://github.com/Duuuuu/Robot_BTC/blob/master/reqres.png
-1. 透過Restful API(API)，直接取得資訊，通常資料格式會是JSON，不須再額外處理。通常不需要API KEY。但是做交易，就會有API KEY，作為身分
-驗證；就像，刷信用卡，要有本人簽名。這個就是很典型的Restful API，有發現到網址有我們要求的東西24hr以及交易是BTC對USDT：https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
+1. 透過Restful API(API)，直接取得資訊，通常資料格式會是JSON，不須再額外處理。通常不需要API KEY。但是做交易，就會有API KEY，作為身分驗證；就像，刷信用卡，要有本人簽名。這個就是很典型的Restful API，有發現到網址有我們要求的東西24hr以及交易是BTC對USDT：https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
 2. 透過scrapy，取得網頁原始碼資訊，通常資料格式會是HTML，必須再額外處理。
 
 五、架構圖：幣安交易所、單一加密貨幣(比特幣)、尋找分批進出場時機。做好資金控管，並設定停利停損：https://github.com/Duuuuu/Robot_BTC/blob/master/structure.png
