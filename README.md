@@ -1,7 +1,9 @@
 # Robot_BTC
 
 Github操作影片:https://youtu.be/xAkl5X1v-Lc
+
 幣安交易所:https://www.binance.com/tw
+
 幣安API Restful:https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
 
     預期工作階段：先完成第一階段，如果有時間再做第二階段和第三階段。
