@@ -24,8 +24,7 @@ Github操作影片:https://youtu.be/xAkl5X1v-Lc
 5. 區塊鏈優點：去中心化、交易內容不易被竄改。區塊鏈缺點：礦工有限、交易時資料傳送緩慢。
 6. 資料來源: https://www.cw.com.tw/article/article.action?id=5090842
 
-二、加密貨幣：通常以BTC和ETH兩大加密貨幣為主。並且以USDT為計價單位，USDT與美金交易，接近1:1：
-高風險、高波動、24小時、歷史資訊短(2009年開始)。
+二、加密貨幣：通常以BTC和ETH兩大加密貨幣為主。並且以USDT為計價單位，USDT與美金交易，接近1:1。高風險、高波動、24小時、歷史資訊短(2009年開始)：
 1. 基本面：加密貨幣技術特質(乙太幣、萊特幣等)、區塊鏈技術、交易頻率、交易規模、掛
 牌的交易所、挖礦速度等。
 2. 技術面：交易系統（含進出場邏輯、停利停損、加碼減倉、價量、型態、支撐壓力位等）。 
@@ -33,37 +32,31 @@ Github操作影片:https://youtu.be/xAkl5X1v-Lc
 4. 消息面：ICO加密貨幣發行、加密貨幣交易所成立、法律制定、避險(新興市場爆發貨幣危機)、交易所本身資訊安全度。第一手訊息Twitter、Telegram、Wechat。第二手訊息Google Trend、Google News。
 
 三、研究目的：對已經掛牌在交易所的加密貨幣，制定交易策略：
-(一)、因為其高風險、高波動的特性，必須嚴格進行風控。
-(二)、建構虛擬貨幣投資組合(Portfolio)，分散風險。
-(三)、資金控管。
-(四)、建立有效的交易系統，提升交易績效。
-(五)、系統性策略思考（含消息面、技術面），建構介入市場與否SOP。
+1. 因為其高風險、高波動的特性，必須嚴格進行風控。
+2. 建構虛擬貨幣投資組合(Portfolio)，分散風險。
+3. 資金控管。
+4. 建立有效的交易系統，提升交易績效。
+5. 系統性策略思考（含消息面、技術面），建構介入市場與否SOP。
  
-五、取得即時資料的方式：大致上有兩種。
-(一)、透過Restful API(API)，直接取得資訊，通常資料格式會是JSON，不須再額外處理。通常不需要API KEY。但是做交易，就會有API KEY，作為身分
-驗證；就像，刷信用卡，要有本人簽名。
-這個就是很典型的Restful API，有發現到網址有我們要求的東西24hr以及交易是BTC對USDT：https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
-(二)、透過scrapy，取得網頁原始碼資訊，通常資料格式會是HTML，必須再額外處理。
+四、取得即時資料的方式：大致上有兩種。
+1. 透過Restful API(API)，直接取得資訊，通常資料格式會是JSON，不須再額外處理。通常不需要API KEY。但是做交易，就會有API KEY，作為身分
+驗證；就像，刷信用卡，要有本人簽名。這個就是很典型的Restful API，有發現到網址有我們要求的東西24hr以及交易是BTC對USDT：https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
+2. 透過scrapy，取得網頁原始碼資訊，通常資料格式會是HTML，必須再額外處理。
 
 
 
 六、架構圖：幣安交易所、單一加密貨幣(比特幣)、尋找分批進出場時機。做好資金控管，並設定停利停損。
-幣安交易所：Restful API
-https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
-Twitter:Restful API
-http://www.dataguru.cn/article-10964-1.html
+1. 幣安交易所：Restful API：https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
+2. Twitter:Restful API：http://www.dataguru.cn/article-10964-1.html
 
 
 
 七、市場模型：
-對過去一段時間前面的資料進行迴歸分析或進行訓練，並且把訓練好的模型，拿去測試過去一段時間後面的資料，看最後結果績效是否不錯。
+1. 對過去一段時間前面的資料進行迴歸分析或進行訓練，並且把訓練好的模型，拿去測試過去一段時間後面的資料，看最後結果績效是否不錯。
+2. Twitter文本分析，這邊可能要對一些關鍵字，給予分數[-1,1]之間，然後對前面幾篇文章進行加權，越接近現在加權越高。W1至W4就是SVM架構。分數越高代表市場越好，分數越低代表市場越不好。
 
 
 
-Twitter文本分析，這邊可能要對一些關鍵字，給予分數[-1,1]之間，然後對前面幾篇文章進行加權，越接近現在加權越高。W1至W4就是SVM架構。
 
-
-
-分數越高代表市場越好，分數越低代表市場越不好。
 
 
