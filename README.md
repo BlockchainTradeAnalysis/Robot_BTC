@@ -43,15 +43,11 @@ Github操作影片:https://youtu.be/xAkl5X1v-Lc
 驗證；就像，刷信用卡，要有本人簽名。這個就是很典型的Restful API，有發現到網址有我們要求的東西24hr以及交易是BTC對USDT：https://api.binance.com/api/v1/ticker/24hr?symbol=BTCUSDT
 2. 透過scrapy，取得網頁原始碼資訊，通常資料格式會是HTML，必須再額外處理。
 
-
-
-六、架構圖：幣安交易所、單一加密貨幣(比特幣)、尋找分批進出場時機。做好資金控管，並設定停利停損。
+五、架構圖：幣安交易所、單一加密貨幣(比特幣)、尋找分批進出場時機。做好資金控管，並設定停利停損。
 1. 幣安交易所：Restful API：https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
 2. Twitter:Restful API：http://www.dataguru.cn/article-10964-1.html
 
-
-
-七、市場模型：
+六、市場模型：
 1. 對過去一段時間前面的資料進行迴歸分析或進行訓練，並且把訓練好的模型，拿去測試過去一段時間後面的資料，看最後結果績效是否不錯。
 2. Twitter文本分析，這邊可能要對一些關鍵字，給予分數[-1,1]之間，然後對前面幾篇文章進行加權，越接近現在加權越高。W1至W4就是SVM架構。分數越高代表市場越好，分數越低代表市場越不好。
 
