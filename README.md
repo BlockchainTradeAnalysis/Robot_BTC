@@ -6,6 +6,10 @@ Github操作影片:https://youtu.be/xAkl5X1v-Lc
 
 幣安API Restful:https://github.com/binance-exchange/binance-official-api-docs/blob/master/rest-api.md
 
+R package e1071:https://cran.r-project.org/web/packages/e1071/index.html
+
+R package C50:https://cran.r-project.org/web/packages/C50/index.html
+
     預期工作階段：先完成第一階段，如果有時間再做第二階段和第三階段。
     以敏捷式開發協同方式完成。
 
